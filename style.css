@@ -297,6 +297,7 @@ input::placeholder, textarea::placeholder {
   border: 6px solid #005ad5;
   margin-top: 0.875rem;
   padding: 1rem 29rem 15rem 3rem;
+  resize: none;
 }
 
 #enviar-form {
