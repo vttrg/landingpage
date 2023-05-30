@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+/* Primeira página */
+
+/* Cabeçalho */
+
+header {
+  background: #005ad5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#titulo {
+  font-family: "Black Ops One", cursive;
+  font-size: 2.25rem;
+}
+
+header .container {
+  max-width: 75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  display: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-mobile {
+  color: white;
+  position: relative;
+  display: none;
+}
+
+.input-mobile {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.menu-mobile svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 6.125rem;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  background: #005ad5;
+}
+
+#first-content .container {
+  margin-top: 2rem;
+  display: grid;
+  max-width: 75rem;
+  grid-template-areas: "conteudo casinha";
+  grid-template-areas: 1fr 1fr;
+  padding-top: 10rem;
+  margin: 0 auto;
+}
+
+#first-content {
+  position: relative;
+  padding-bottom: 16.25rem;
+}
+
+#gerencie {
+  font-size: 1.2rem;
+}
+
+#first-text {
+  padding-top: 2rem;
+  padding-bottom: 2.2rem;
+  font-size: 0.875rem;
+}
+
+#primeirobloco {
+  grid-area: conteudo;
+  color: white;
+}
+
+.casinha {
+  grid-area: casinha;
+  max-width: 38.3132rem;
+  margin-left: 6.1rem;
+}
+
+#firstbtn {
+  all: unset;
+
+  background-color: #fff;
+  color: #005ad5;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.retangulo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 260px;
+}
+
+#oferta {
+  background: #f4f6f7;
+  padding: 7.8125rem 0;
+}
+
+#oferta .container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+#offercenter {
+  text-align: center;
+}
+
+.titulo-pagina {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+#gerenciamentooffer {
+  color: #6c6c6c;
+  font-size: 1.25rem;
+}
+
+#planos {
+  margin-top: 3.875rem;
+  display: flex;
+  gap: 10.375rem;
+}
+
+.caixasplanos {
+  background-color: white;
+  text-align: center;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  padding-top: 2.4375rem;
+  padding-bottom: 2.4375rem;
+}
+
+.titulo-plano {
+  padding: 1.5rem 1.4325rem 1rem 1.4325rem;
+}
+
+.conteudo-plano {
+  padding: 0 1.4325rem 1.99875rem 1.4325rem;
+}
+
+.botaooffer {
+  border: 2px solid #005ad5;
+  background-color: white;
+  color: #005ad5;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#sobre {
+  background: white;
+  padding: 13.5rem 0;
+}
+
+#sobre .container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.bloco1sobre {
+  display: flex;
+  gap: 13.8125rem;
+}
+
+.infosobre {
+  padding-top: 4rem;
+}
+
+.subtitulo-sobre {
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.titulo-sobre {
+  font-weight: 500;
+  padding-top: 0.625rem;
+  font-size: 2.125rem;
+}
+
+.conteudo-sobre {
+  color: #6c6c6c;
+  padding-top: 1.5rem;
+}
+
+.bloco2sobre {
+  display: flex;
+  padding-top: 16.5rem;
+  gap: 9.5rem;
+}
+
+.casaazul {
+  margin-top: 2rem;
+  object-fit: contain;
+  width: 100%;  
+}
+
+#contato {
+  background: #f4f6f7;
+  padding: 8.375rem 0;
+}
+
+#contato .container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+#bloco-contato {
+  padding: 8.25rem 15.9375rem;
+  text-align: center;
+}
+
+#bloco-contato h5 {
+  font-size: 2.25rem;
+  color: #000000;
+}
+
+#bloco-contato p {
+  color: #6c6c6c;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#formulario {
+  padding-top: 6.25rem;
+  max-width: 58.125rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+#nome-form {
+  margin-right: 1.875rem;
+  margin-bottom: 0.875rem;
+  padding: 0.8rem 6.4rem 0.8rem 3rem;
+  border: 6px solid #005ad5;
+}
+
+#email-form {
+  border: 6px solid #005ad5;
+  padding: 0.8rem 6.4rem 0.8rem 3rem;
+}
+
+#assunto-form {
+  display: flex;
+  border: 6px solid #005ad5;
+  padding: 0.8rem 29rem 0.8rem 3rem;
+}
+
+#mensagem-form {
+  display: flex;
+  border: 6px solid #005ad5;
+  margin-top: 0.875rem;
+  padding: 1rem 29rem 15rem 3rem;
+}
+
+#enviar-form {
+  all: unset;
+
+  margin-top: 1.8125rem;
+  background-color: #005ad5;
+  padding: 1rem 6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .container {
+  margin: 2rem 0;
+  text-align: end;
+  width: 100%;
+  padding-right: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #005ad5;
+}
+
+#rodape {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+
+    height: calc(100vh - 4rem);
+    background-color: #005ad5;
+    position: fixed;
+    top: 4rem;
+    left: -100vw;
+    z-index: 1;    
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .input-mobile:checked ~ ul {
+    left: 0;      
+  }
+
+  .input-mobile:checked ~ ul li {
+    color: white;
+  }
+
+  .input-mobile:checked ~ ul li a {
+    display: block;
+  }
+
+  #titulo {
+    flex-shrink: 0;
+  }
+
+  .casinha {
+    display: none;
+  }
+
+  #first-content {
+    margin: 0;
+  }
+
+  #primeirobloco {
+    padding: 1rem;
+  }
+
+  #offercenter {
+    padding: 1rem;
+  }
+
+  #planos {
+    display: inline-block;
+    padding: 2rem;
+  }
+
+  .caixasplanos {
+    margin: 1.5rem;
+  }
+
+  #sobre img {
+    display: none;
+  }
+
+  #sobre {
+    padding: 1rem;
+  }
+
+  .bloco1sobre,
+  .bloco2sobre {
+    display: inline;
+  }
+
+  #contato {
+    padding: 1rem;
+  }
+
+  #bloco-contato {
+    display: inline;
+  }
+
+  #nome-form,
+  #email-form,
+  #assunto-form,
+  #mensagem-form,
+  #enviar-form {
+    margin: 0.8rem auto;
+  }
+
+  #nome-form,
+  #email-form,
+  #assunto-form,
+  #mensagem-form {
+    padding: 1rem 0.85rem;
+    width: 100%;
+  }
+
+  #mensagem-form {
+    padding: 1rem 0.85rem;
+    width: 100%;
+    height: 180px;
+  }
+
+  #rodape {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
